@@ -101,7 +101,7 @@ try:
         stdin = (x.rstrip() for x in sys.stdin)
 
     if args.expression:
-        args.expression = args.expression.replace("`", "'")
+        args.expression = args.expression.replace("`", "\"")
         if args.expression.startswith('?') or args.expression.endswith('?'):
             final_atom = current_list(args.expression.rstrip('?'))[-1]
             first_atom = current_list(args.expression.lstrip('?'))[0]
@@ -119,9 +119,9 @@ try:
                 from itertools import islice
                 stdin = islice(stdin,1)
     if args.pre_cmd:
-        args.pre_cmd = args.pre_cmd.replace("`", "'")
+        args.pre_cmd = args.pre_cmd.replace("`", "\"")
     if args.post_cmd:
-        args.post_cmd = args.post_cmd.replace("`", "'")
+        args.post_cmd = args.post_cmd.replace("`", "\"")
 
     lazy_imports(args.expression, args.pre_cmd, args.post_cmd)
 
