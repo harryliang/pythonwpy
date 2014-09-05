@@ -1,3 +1,7 @@
+http://github.com/Russell91/pythonpy now supports windows 
+-------------------------------------
+
+
 Installation
 ------------
 
