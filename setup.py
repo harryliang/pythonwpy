@@ -11,7 +11,7 @@ for e in endings:
 
 setup(
     name='pythonwpy',
-    version='0.4.0',
+    version='0.4.1',
     description='python -c, with tab completion and shorthand',
     license='MIT',
     url='https://github.com/Russell91/pythonwpy',
